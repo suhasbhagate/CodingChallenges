@@ -1,10 +1,10 @@
 package main
 
-import(
+import (
 	"fmt"
 )
 
-func main(){
+func main() {
 	var n int64 = 9
 	var flp int64
 	flp = flippingBits(n)
@@ -12,6 +12,7 @@ func main(){
 }
 
 func flippingBits(n int64) int64 {
-    var output uint32 = ^(uint32(n))
-    return int64(output)
+	//var output uint32 = ^(uint32(n))
+	//return int64(output)
+	return int64(^uint32(n))
 }
